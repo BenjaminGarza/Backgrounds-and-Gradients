@@ -1,0 +1,45 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+#main {
+  border: 5px red solid;
+  width: 1000px;
+  height:  600px;
+  
+}
+#billboard{
+    background-image: url(https://i0.wp.com/9to5mac.com/wp-content/uploads/sites/6/2014/02/mountain.png?resize=2000%2C0&quality=82&strip=all);
+    height: 800px;
+    width: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    image-resolution: 150%;
+}
+article{
+    height: 600px;
+    border: 3px purple solid;
+}
+#related-products{
+    display: flex;
+    border: 5px green solid;
+    justify-content: center;
+    margin: auto;
+    padding-left: 0;
+}
+#related-products li img{
+width: 250px;
+}
+
+aside{
+    border: 5px yellow solid;
+}
+#nav-bar-list{
+    display: flex;
+    border: 5px green solid;
+    justify-content: center;
+    
+}
+nav{
+    
+}
