@@ -41,5 +41,17 @@ aside{
     
 }
 nav{
+    position: absolute;
+    width: 600px;
     
+}
+body nav li{
+    padding: 10px;
+    margin: auto;
+    color: white;
+    list-style: none;
+}
+a{
+    color: inherit;
+    text-decoration: none;
 }
