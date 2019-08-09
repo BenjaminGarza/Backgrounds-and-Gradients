@@ -1,25 +1,19 @@
-body{
-    
-    width:1440px;
-    height: 100%;
-    margin: auto;
-    
+.flex-container{
+ display: flex;
+ flex-direction: column;
 }
-
 #billboard{
     background-image: url(https://web.archive.org/web/20140228114747im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg);
     background-position: bottom;
-
-  
     background-repeat: no-repeat;
-    
- 
-   
-    
-}
-article{
     height: 600px;
-    
+}
+#billboard-section{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 25px;
+
 }
 
 #related-products{
@@ -28,18 +22,18 @@ article{
 #related-products li img{
 width: 100%;
 }
-
-
+header{
+    display: flex;
+    justify-content: center
+}
 nav{
-    position: relative;
-    top: 230px;
-    width: 62%;
-    height: 30px;
-    margin: 60px;
+    position: absolute;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    top: 140px;
 }
 #nav-bar-list{
-    position: relative;
-    left: 25%;
     display: flex;
     justify-content: space-between;
     /* border: 5px green solid; */
@@ -54,20 +48,17 @@ nav{
     box-shadow: 1px 1px 5px rgb(46, 46, 46);
     padding: 0;
     line-height: 20px;
-    width: 100%;
-    height: 100%;
+    width: 900px;
+    height: 36px;
     z-index: 1;
 }
 body nav li{
-    
-    height: 100%;
-    /* padding: 10px; */
-    margin: auto;
-    /* margin-top: -3px; */
+    display: flex;
     color: white;
     list-style: none;
     border: 1px solid #6e6e6e;
-    text-align: center;
+   justify-content: center;
+    align-items: center;
     flex-grow: 1;
 }
 #search-bar{
@@ -102,8 +93,6 @@ a{
 .headline{
     position: absolute;
     top: 195px;
-    left: 265px;
-    margin: auto;
     width: 980px;
     height: 90px;
     overflow: hidden;
@@ -122,8 +111,6 @@ a{
 .subheadline{
     position: absolute;
     top:275px;
-    left: 230px;
-    margin: auto;
     width: 1025px;
     height: 90px;
     overflow: hidden;
@@ -139,8 +126,6 @@ a{
 .watch-film{
     position: absolute;
     top: 375px;
-    left: 230px;
-    margin: auto;
     width: 1025px;
     height: 50px;
     overflow: hidden;
@@ -158,15 +143,12 @@ aside li{
     list-style: none;
 }
 footer{
-    display: flex;
-    justify-content: center;
+    display: block;
     font-size: .8334em;
     line-height: 1.2;
     color: #6e6e6e;
     font: 12px "lucida Grande", "Helvetica"; 
     background-color: white;
-    width: 100%;
-    height: 600px;
 }
 footer div{
     margin: 30px;
@@ -215,13 +197,12 @@ footer div ul li{
     margin-left: 6px;
     border-left: 1px solid #6e6e6e;
     height: 15px;
+    min-width: 65px;
 }
 #site-map{
 border-left: none;
 }
-#billboard-section{
-    position: relative;
-}
+
 #promo1{
     background-image: url(https://web.archive.org/web/20140301004610im_/http://images.apple.com/home/images/promo_iphone5s.jpg);
     height: 200px;  
@@ -243,7 +224,7 @@ border-left: none;
     margin: 0;
   }
   #related-products li{
-      width: 25%;
+      width: 360px;
   }
   .promo{
       padding: 0;
@@ -263,4 +244,7 @@ border-left: none;
     
  #all-rights-reserved{
      width: 265px;
+ }
+ .inline{
+     display: inline;
  }
