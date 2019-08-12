@@ -1,3 +1,4 @@
+
 .flex-container{
  display: flex;
  flex-direction: column;
@@ -7,6 +8,7 @@
     background-position: bottom;
     background-repeat: no-repeat;
     height: 600px;
+    min-width: 1440px;
 }
 #billboard-section{
     display: flex;
@@ -24,7 +26,8 @@ width: 100%;
 }
 header{
     display: flex;
-    justify-content: center
+    justify-content: center;
+    min-width: 1440px;
 }
 nav{
     position: absolute;
@@ -149,6 +152,7 @@ footer{
     color: #6e6e6e;
     font: 12px "lucida Grande", "Helvetica"; 
     background-color: white;
+    min-width: 1440px;
 }
 footer div{
     margin: 30px;
